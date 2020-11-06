@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margemAtividades">16dp</dimen>
+    <dimen name="paddingLabels">8dp</dimen>
+    <dimen name="paddingCaixasTexto">8dp</dimen>
+    <dimen name="espacoEntreInputs">24dp</dimen>
+    <dimen name="margemControlos">16dp</dimen>
+    <dimen name="textoGrande">48sp</dimen>
+</resources>

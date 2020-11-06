@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/margemAtividades"
+    tools:context=".ConsultarTemperaturaActivity">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/corLabels"
+        android:gravity="center"
+        android:padding="@dimen/paddingLabels"
+        android:text="@string/fahrenheit"
+        android:textColor="@color/corTextoLabels" />
+
+    <TextView
+        android:id="@+id/textViewFahrenheit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/corFundoTextoConsulta"
+        android:gravity="center|center_vertical"
+        android:padding="@dimen/paddingLabels"
+        android:textColor="@color/corTextoLabels"
+        android:textSize="@dimen/textoGrande"
+        tools:text="23,0" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/espacoEntreInputs"
+        android:background="@color/corLabels"
+        android:gravity="center"
+        android:padding="@dimen/paddingLabels"
+        android:text="@string/celsius"
+        android:textColor="@color/corTextoLabels" />
+
+    <TextView
+        android:id="@+id/textViewCelsius"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/corFundoTextoConsulta"
+        android:gravity="center|center_vertical"
+        android:padding="@dimen/paddingLabels"
+        android:textColor="@color/corTextoLabels"
+        android:textSize="@dimen/textoGrande"
+        tools:text="73,4" />
+
+</LinearLayout>
