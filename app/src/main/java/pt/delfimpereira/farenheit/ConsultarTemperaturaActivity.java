@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.TextView;
 
+import java.text.DecimalFormat;
+
 public class ConsultarTemperaturaActivity extends AppCompatActivity {
 
     @Override
@@ -16,10 +18,12 @@ public class ConsultarTemperaturaActivity extends AppCompatActivity {
         //Intent intent = getIntent();
         //double temperatura = intent.getDoubleExtra(MainActivity.TEMPERATURA, 0.0);
 
-        TextView textViewCelsius = findViewById(R.id.textViewCelsius);
-        textViewCelsius.setText(String.valueOf(DadosApp.temperatura.GetCelsius()));
+        DecimalFormat decimalFormat = new DecimalFormat("0.##");
 
+        TextView textViewCelsius = findViewById(R.id.textViewCelsius);
+        textViewCelsius.setText(decimalFormat.format(DadosApp.temperatura.GetCelsius()));
         TextView textViewFahrenheit = findViewById((R.id.textViewFahrenheit));
-        textViewFahrenheit.setText(String.valueOf(DadosApp.temperatura.GetFahrenheit()));
+        textViewFahrenheit.setText(decimalFormat.format(DadosApp.temperatura.GetFahrenheit()));
+        //textViewFahrenheit.setText(String.valueOf(DadosApp.temperatura.GetFahrenheit()));
     }
 }
