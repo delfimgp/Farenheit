@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Temperature Converter</string>
+    <string name="app_name">Temperature Conversion</string>
     <string name="unidade">Unit</string>
     <string name="fahrenheit">Fahrenheit</string>
     <string name="celsius">Celsius</string>
