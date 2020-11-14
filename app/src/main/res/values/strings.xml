@@ -5,4 +5,6 @@
     <string name="celsius">Celsius</string>
     <string name="converter">Convert</string>
     <string name="temperaturas">Temperature</string>
+    <string name="insira_temperatura_valida">Please enter a valid temperature</string>
+    <string name="indique_unidades">Please specify the temperature units</string>
 </resources>

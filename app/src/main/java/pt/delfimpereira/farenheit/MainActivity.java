@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
             temperatura = Double.parseDouble(s);
         } catch (NumberFormatException e) {
             e.printStackTrace();
-            editTextTemperatura.setError("Introduza uma temperatura váliada");
+            editTextTemperatura.setError(getString(R.string.insira_temperatura_valida));
             editTextTemperatura.requestFocus();
             return;
         }
@@ -59,10 +59,11 @@ public class MainActivity extends AppCompatActivity {
                 snackbar = null;
             }
         } else {
-            radioButtonCelsius.setError("Indique as unidades da temperatura");
-            radioButtonFahrenheit.setError("Indique as unidades da temperatura");
+            String erro = getString(R.string.indique_unidades);
+            radioButtonCelsius.setError(erro);
+            radioButtonFahrenheit.setError(erro);
             //Toast.makeText(this, "Indique as unidades da temperatura", Toast.LENGTH_LONG).show();
-            snackbar = Snackbar.make(radioButtonCelsius, "Indique as unidades da temperatura", Snackbar.LENGTH_INDEFINITE);
+            snackbar = Snackbar.make(radioButtonCelsius, erro, Snackbar.LENGTH_INDEFINITE);
             snackbar.show();
 
             return;
